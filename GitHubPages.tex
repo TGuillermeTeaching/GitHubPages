@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{enumerate}
+\usepackage[osf]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\pagenumbering{arabic}
+\setlength{\parindent}{10ex}
+\linespread{1.66} % All text should be double-spaced with occasional exceptions for tables. 
+\raggedright
+
+\usepackage{fancyhdr}
+\usepackage{lastpage} 
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage \hspace{1pt} / \pageref{LastPage}}
+
+\begin{document}
+
+\begin{flushright}
+Version dated: \today
+\end{flushright}
+\begin{center}
+
+%Title
+\noindent{\Large{\bf{A quick GitHub pages tutorial}}}\\
+\bigskip
+%Author
+\noindent{Thomas Guillerme - guillert@tcd.ie - \url{http://tguillerme.github.io/}}\\
+
+\end{center}
+
+This is a really quick tutorial on how to create GitHub pages, whether you want a specific \textbf{project page} or just a \textbf{user page} (e.g. stuff about your academic life).
+The idea is that GitHub allows to you create a repository that is hosted as a website.
+Therefore you can interact with this repository in the usual ways (collaboration, version control, etc...) but it will appear as a web page instead of the classical repository visualisation of GitHub.
+%Demo: Go through each step on screen (no submitting)
+\section{Generating the page}
+It's dead easy\footnote{Involves just clicking.}, just follow these steps (you might have already done the two first ones!):
+\begin{enumerate}
+    \item{Register on GitHub:} \url{https://github.com/}
+
+    \item{Download a GUI client (recommended):}\\
+        \begin{itemize}
+        \item{Windows: \url{https://windows.github.com/}}
+        \item{Mac: \url{https://mac.github.com/}}
+        \item{Linux/Nerd\footnote{If you're a bit more familiar with not only clicking but also copy/pasting stuff in the terminal window.}: You're grant, it's really easy on terminal too.}
+        \end{itemize}
+
+    \item{Generate your website:} \url{https://pages.github.com/}
+\end{enumerate}
+
+\section{Editing the page}
+\setlength{\parindent}{5ex}
+Once every step is completed, let the magic happen and just modify the content depending on your mood straight from your computer. Then save/commit/push the modified content on GitHub and it will instantly update your online repository.
+%Demo: Submit a dummy tutorial page containing a link to this pdf.
+
+GitHub pages are written in html language, if you're familiar with it, just have fun, if not here is a non-exhaustive list of resources:
+\par
+\begin{itemize}
+    \item{Trial and error, get your hands dirty!}
+    \item{\url{http://www.w3schools.com/}}
+    \item{\url{http://www.htmldog.com/guides/html/beginner/}}
+    \item{\url{http://html.net/}}
+    \item{``steal'' and modify other pages. It's GitHub, that's what's it for!}
+\end{itemize}
+Note that you can create pages in any other web language too (e.g. Jekyll).
+It's not much more complicated than that!
+
+\newpage
+
+\section{Some more details}
+\subsection{User or project page?}
+\setlength{\parindent}{5ex}
+The user page will create a new repository on GitHub and your computer containing all of the web pages' information and resources.
+
+The project page will link directly to one of your repositories, if you're familiar with GitHub, it's like a README file but slightly fancier.
+You can generate it automatically\footnote{Involves just clicking.} or manually\footnote{Also involves a bit of copy/pasting stuff in the terminal window - \url{https://help.github.com/articles/creating-project-pages-manually}}.
+\par
+
+\subsection{What's in the project repository}
+
+\begin{spacing}{1.1}
+user.github.io/ \\
+     \qquad  $\rightarrow$ index.html \\
+     \qquad  $\rightarrow$ any\_other\_page.html \\
+     \qquad  $\rightarrow$ stylesheet folder \\
+     \quad \quad \qquad $\rightarrow$ .css file \\
+     \qquad  $\rightarrow$ any other folder \\
+     \quad \quad \qquad $\rightarrow$ some file \\
+\end{spacing}
+
+\subsection{Domain name?}
+If you happen to have a domain name that you're using for an other website (e.g. checkmyawesomecv.com) there's a way to use it by adding a CNAME file to your repository.
+    
+\noindent{\url{https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages}}
+
+\end{document}
