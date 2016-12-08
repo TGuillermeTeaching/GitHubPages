@@ -9,10 +9,20 @@ https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 
 ### HTML5
 Very basic: http://www.w3schools.com/html/html5_intro.asp
+
 CSS: http://www.w3schools.com/html/html_css.asp
+
 Everything (literally): http://www.w3schools.com/
 
-# Online presence
+## Templates!
+(download the whole yoke!)
+
+https://github.com/showcases/github-pages-examples
+
+https://github.com/website-templates
+
+
+<!-- # Online presence
 Get your academic profiles!
 
 ### Google Scholar (once you have one paper in)
@@ -40,3 +50,4 @@ Twitter: https://twitter.com/
 ImpactStory (goes well with Twitter): https://impactstory.org/
 
 > Twitter might sound superficial but it has some clear academic benefits if used for academic purpose (please don't post pictures of your lunch/cat)!
+-->
